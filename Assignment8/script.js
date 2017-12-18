@@ -47,12 +47,13 @@ $(document).ready(function () {
                                 clickedCards[i].img.delay(1000).hide(0);
                             }
                         }
-                        clickedCards = [];
-                    } else {
-                        image
-                        clickedCards.push({
-                            num: $card.data().num,
-                            img: $card.find('img')
+                        
+                   	clickedCards = [];
+					} else {
+						// keep track of current image
+						clickedCards.push({
+							num: $card.data().num,
+							img: $card.find('img')
                         });
                     }
                 });

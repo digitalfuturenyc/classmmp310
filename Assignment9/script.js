@@ -26,17 +26,9 @@ function initMap() {
                 $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + marker.title + "&id=524901&APPID=27d388faf029d2c7e86b756561ca29af&units=imperial", function (jsonWeather) {
                     console.log(jsonWeather);
                     console.log(jsonWeather.name);
-      $('.greeting-city').html("City " + jsonWeather.name);
-       $('.greeting-weather').html("Temperature " + jsonWeather.main.temp
-
-);
-                  
-    
-                    
-                    
+                    $('.greeting-city').html("City " + jsonWeather.name);
+                    $('.greeting-weather').html("Temperature " + jsonWeather.main.temp);
                 });
-                
-                
             });
         }
     });
