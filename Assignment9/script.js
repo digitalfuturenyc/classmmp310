@@ -23,7 +23,7 @@ function initMap() {
             });
             google.maps.event.addListener(marker, 'click', function () {
                 console.log(marker.title);
-                $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + marker.title + "&id=524901&APPID=27d388faf029d2c7e86b756561ca29af&units=imperial", function (jsonWeather) {
+                $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + marker.title + "&id=524901&APPID=27d388faf029d2c7e86b756561ca29af&units=imperial", function (jsonWeather) {
                     console.log(jsonWeather);
                     console.log(jsonWeather.name);
       $('.greeting-city').html("City " + jsonWeather.name);
